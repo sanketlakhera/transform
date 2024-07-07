@@ -14,9 +14,6 @@
     "postinstall": "patch-package",
     "build:analyze": "ANALYZE=true yarn build"
   },
-  "engines": {
-    "node": "16.x"
-  },
   "dependencies": {
     "@babel/plugin-transform-flow-strip-types": "^7.16.0",
     "@babel/plugin-transform-typescript": "^7.16.1",
@@ -125,5 +122,9 @@
     "./assets/*/*.svg": [
       "imagemin-lint-staged"
     ]
+  },
+  "volta": {
+    "node": "16.20.2",
+    "yarn": "1.22.19"
   }
 }
